@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://techsphere-website.netlify.app/sitemap.xml
+Sitemap: https://techsphereapp.com/sitemap.xml
