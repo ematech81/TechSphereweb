@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechSphere — Building Smart Digital Solutions For Modern Businesses</title>
+  <meta name="description" content="TechSphere is a modern African technology company building mobile apps, SaaS products, business management systems, and AI-powered digital platforms." />
+  <meta name="keywords" content="TechSphere, African tech startup, mobile apps, SaaS, OwoTrack, HeartLink, FixNG, software development Nigeria" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="TechSphere — Smart Digital Solutions" />
+  <meta property="og:description" content="Building smart digital products for Africa and beyond. Mobile apps, SaaS, AI-powered systems." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://techsphereapp.com" />
+  <meta property="og:image" content="images/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TechSphere — Smart Digital Solutions" />
+  <meta name="twitter:description" content="Building smart digital products for Africa and beyond." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<!-- Page Loader -->
+<div class="page-loader" id="pageLoader">
+  <div class="loader-logo">
+    <div class="loader-mark">TS</div>
+    <div class="loader-text">TechSphere</div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+</div>
+
+<!-- ══════════ NAVBAR ══════════ -->
+<nav class="navbar" id="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">TS</div>
+      TechSphere
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-gold btn-sm">Get Started</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-cta" style="margin-top:28px;">
+    <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Get Started</a>
+  </div>
+</div>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+    <div class="hero-grid"></div>
+    <canvas id="heroParticles" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:.6;"></canvas>
+  </div>
+
+  <div class="container">
+    <div class="hero-content">
+      <!-- Text -->
+      <div class="hero-text">
+        <span class="tag">🌍 African Tech Innovation</span>
+        <h1 class="hero-headline">
+          Building Smart <span class="highlight">Digital Solutions</span> For Modern Businesses
+        </h1>
+        <p class="hero-description">
+          TechSphere crafts world-class mobile apps, SaaS platforms, and AI-powered systems that help African businesses thrive in the digital age.
+        </p>
+        <div class="hero-buttons">
+          <a href="products.html" class="btn btn-gold btn-lg">
+            <span>🚀</span> Explore Products
+          </a>
+          <a href="contact.html" class="btn btn-outline-white btn-lg">
+            Start a Project
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat-item">
+            <span class="hero-stat-number" data-counter data-target="3" data-suffix="+">3+</span>
+            <span class="hero-stat-label">Apps Built</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-number" data-counter data-target="1000" data-suffix="+">1000+</span>
+            <span class="hero-stat-label">Users Served</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-number" data-counter data-target="7" data-suffix="+">7+</span>
+            <span class="hero-stat-label">Services Offered</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual -->
+      <div class="hero-visual">
+        <div class="phone-mockup-group">
+          <!-- Main phone -->
+          <div class="phone-mockup main">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="phone-screen-content">
+                <div class="phone-app-icon">₦</div>
+                <div class="phone-app-name">OwoTrack</div>
+                <div class="phone-app-sub">Business Manager</div>
+                <div class="phone-chart">
+                  <div style="color:rgba(255,255,255,.5);font-size:.65rem;margin-bottom:8px;font-family:'Inter',sans-serif;">Monthly Revenue</div>
+                  <div class="chart-bar-row"><span class="chart-bar-label">Jan</span><div class="chart-bar-track"><div class="chart-bar-fill" style="width:60%"></div></div></div>
+                  <div class="chart-bar-row"><span class="chart-bar-label">Feb</span><div class="chart-bar-track"><div class="chart-bar-fill" style="width:80%"></div></div></div>
+                  <div class="chart-bar-row"><span class="chart-bar-label">Mar</span><div class="chart-bar-track"><div class="chart-bar-fill" style="width:45%"></div></div></div>
+                  <div class="chart-bar-row"><span class="chart-bar-label">Apr</span><div class="chart-bar-track"><div class="chart-bar-fill" style="width:90%"></div></div></div>
+                  <div class="chart-bar-row"><span class="chart-bar-label">May</span><div class="chart-bar-track"><div class="chart-bar-fill" style="width:70%"></div></div></div>
+                </div>
+                <div style="background:rgba(245,196,0,.12);border-radius:8px;padding:10px;margin-top:10px;display:flex;justify-content:space-between;align-items:center;">
+                  <span style="color:rgba(255,255,255,.7);font-size:.65rem;font-family:'Inter',sans-serif;">Total Balance</span>
+                  <span style="color:#F5C400;font-weight:700;font-size:.85rem;font-family:'Poppins',sans-serif;">₦245,000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating badges -->
+          <div class="floating-badge badge-1">
+            <span class="badge-icon">💰</span>
+            <div class="badge-text">
+              <div class="badge-title">Invoice Sent</div>
+              <div class="badge-sub">₦50,000 paid</div>
+            </div>
+          </div>
+          <div class="floating-badge badge-2">
+            <span class="badge-icon">❤️</span>
+            <div class="badge-text">
+              <div class="badge-title">New Match</div>
+              <div class="badge-sub">HeartLink</div>
+            </div>
+          </div>
+          <div class="floating-badge badge-3">
+            <span class="badge-icon">🔧</span>
+            <div class="badge-text">
+              <div class="badge-title">Job Confirmed</div>
+              <div class="badge-sub">FixNG Artisan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ STATS BAR ══════════ -->
+<section class="stats-bar">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal delay-1">
+        <span class="stat-number" data-counter data-target="3" data-suffix="+">3+</span>
+        <div class="stat-label">Products Launched</div>
+      </div>
+      <div class="stat-item reveal delay-2">
+        <span class="stat-number" data-counter data-target="1000" data-suffix="+">1,000+</span>
+        <div class="stat-label">Active Users</div>
+      </div>
+      <div class="stat-item reveal delay-3">
+        <span class="stat-number" data-counter data-target="7" data-suffix="+">7+</span>
+        <div class="stat-label">Services Offered</div>
+      </div>
+      <div class="stat-item reveal delay-4">
+        <span class="stat-number" data-counter data-target="100" data-suffix="%">100%</span>
+        <div class="stat-label">Mobile-First Builds</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ABOUT SNIPPET ══════════ -->
+<section class="section-pad">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;">
+      <div class="reveal-left">
+        <span class="tag">About TechSphere</span>
+        <h2 style="color:var(--purple);margin:16px 0 20px;">We Build Digital Products That Solve Real Problems</h2>
+        <p style="color:var(--text-muted);margin-bottom:20px;font-size:1.05rem;">
+          TechSphere is a modern African technology brand on a mission to build smart, scalable digital solutions for businesses, communities, and individuals.
+        </p>
+        <p style="color:var(--text-muted);margin-bottom:32px;">
+          From business management apps to social platforms and service marketplaces, we're crafting an ecosystem of products built specifically for Africa's growing digital economy.
+        </p>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+          <a href="products.html" class="btn btn-outline">See Our Products</a>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+          <div style="background:linear-gradient(135deg,var(--purple),var(--purple-lt));border-radius:var(--radius-lg);padding:32px;color:var(--white);">
+            <div style="font-size:2rem;margin-bottom:12px;">🚀</div>
+            <h3 style="font-size:1rem;margin-bottom:8px;">Our Mission</h3>
+            <p style="font-size:.85rem;opacity:.75;line-height:1.7;">Empower African businesses with cutting-edge digital tools.</p>
+          </div>
+          <div style="background:var(--gold);border-radius:var(--radius-lg);padding:32px;color:var(--dark);">
+            <div style="font-size:2rem;margin-bottom:12px;">🌍</div>
+            <h3 style="font-size:1rem;margin-bottom:8px;">Our Vision</h3>
+            <p style="font-size:.85rem;opacity:.75;line-height:1.7;">Become Africa's most trusted technology ecosystem.</p>
+          </div>
+          <div style="background:var(--gray);border-radius:var(--radius-lg);padding:32px;grid-column:1/-1;">
+            <div style="display:flex;gap:32px;justify-content:space-around;text-align:center;">
+              <div>
+                <div style="font-size:1.8rem;font-weight:800;color:var(--purple);font-family:'Poppins',sans-serif;">Mobile</div>
+                <div style="font-size:.82rem;color:var(--text-muted);">First Design</div>
+              </div>
+              <div style="width:1px;background:var(--gray-2);"></div>
+              <div>
+                <div style="font-size:1.8rem;font-weight:800;color:var(--purple);font-family:'Poppins',sans-serif;">AI</div>
+                <div style="font-size:.82rem;color:var(--text-muted);">Powered</div>
+              </div>
+              <div style="width:1px;background:var(--gray-2);"></div>
+              <div>
+                <div style="font-size:1.8rem;font-weight:800;color:var(--purple);font-family:'Poppins',sans-serif;">Africa</div>
+                <div style="font-size:.82rem;color:var(--text-muted);">Focused</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SERVICES ══════════ -->
+<section class="services section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag">What We Build</span>
+      <h2>Our Services</h2>
+      <p>From concept to launch, we deliver end-to-end digital solutions that scale with your business.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal delay-1">
+        <div class="service-icon">📱</div>
+        <h3>Mobile App Development</h3>
+        <p>Cross-platform Android and iOS apps built with React Native — fast, beautiful, and business-ready.</p>
+        <a href="contact.html" class="service-link">Get started →</a>
+      </div>
+      <div class="service-card reveal delay-2">
+        <div class="service-icon">🌐</div>
+        <h3>Web Development</h3>
+        <p>Modern, responsive websites and web applications that convert visitors into customers.</p>
+        <a href="contact.html" class="service-link">Get started →</a>
+      </div>
+      <div class="service-card reveal delay-3">
+        <div class="service-icon">☁️</div>
+        <h3>SaaS Platforms</h3>
+        <p>Scalable cloud-based software platforms with subscription models, dashboards, and multi-user support.</p>
+        <a href="contact.html" class="service-link">Get started →</a>
+      </div>
+      <div class="service-card reveal delay-1">
+        <div class="service-icon">🎨</div>
+        <h3>UI/UX Design</h3>
+        <p>Premium interface design with a focus on usability, aesthetics, and driving user engagement.</p>
+        <a href="contact.html" class="service-link">Get started →</a>
+      </div>
+      <div class="service-card reveal delay-2">
+        <div class="service-icon">🤖</div>
+        <h3>AI Integrations</h3>
+        <p>Smart features powered by AI: voice input, automated reports, intelligent recommendations, and more.</p>
+        <a href="contact.html" class="service-link">Get started →</a>
+      </div>
+      <div class="service-card reveal delay-3">
+        <div class="service-icon">🏢</div>
+        <h3>Business Systems</h3>
+        <p>Custom business management systems — inventory, invoicing, CRM, payroll, and analytics built for your workflow.</p>
+        <a href="contact.html" class="service-link">Get started →</a>
+      </div>
+      <div class="service-card reveal delay-2" style="grid-column:1/-1;max-width:500px;margin:0 auto;width:100%;">
+        <div class="service-icon">⚡</div>
+        <h3>Startup MVP Development</h3>
+        <p>Turn your idea into a working product fast. We help early-stage startups build their Minimum Viable Product in weeks, not months.</p>
+        <a href="contact.html" class="service-link">Get started →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PRODUCTS ══════════ -->
+<section class="products section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag">Our Products</span>
+      <h2>Apps Built By TechSphere</h2>
+      <p>Real digital products solving real problems across business, community, and services.</p>
+    </div>
+    <div class="products-grid">
+      <!-- OwoTrack - Featured -->
+      <div class="product-card featured reveal">
+        <div class="product-card-inner">
+          <div class="product-visual" style="background:linear-gradient(135deg,#2B1464,#F5C400 200%);">
+            <div style="text-align:center;z-index:1;position:relative;">
+              <div class="app-icon-large app-icon-owotrack" style="margin:0 auto 20px;">₦</div>
+              <div style="color:rgba(255,255,255,.9);font-family:'Poppins',sans-serif;font-weight:700;font-size:1rem;">OwoTrack</div>
+              <div style="color:rgba(255,255,255,.6);font-size:.8rem;margin-top:4px;">Smart Business Manager</div>
+              <!-- Mini Chart -->
+              <div style="margin-top:24px;background:rgba(255,255,255,.08);border-radius:12px;padding:16px;">
+                <div style="display:flex;align-items:flex-end;gap:6px;height:60px;justify-content:center;">
+                  <div style="width:16px;background:rgba(245,196,0,.4);border-radius:3px;height:40%;"></div>
+                  <div style="width:16px;background:rgba(245,196,0,.6);border-radius:3px;height:60%;"></div>
+                  <div style="width:16px;background:rgba(245,196,0,.4);border-radius:3px;height:35%;"></div>
+                  <div style="width:16px;background:rgba(245,196,0,.9);border-radius:3px;height:80%;"></div>
+                  <div style="width:16px;background:#F5C400;border-radius:3px;height:100%;"></div>
+                  <div style="width:16px;background:rgba(245,196,0,.7);border-radius:3px;height:70%;"></div>
+                </div>
+                <div style="color:rgba(255,255,255,.5);font-size:.65rem;text-align:center;margin-top:8px;">Revenue Growth 2025</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-tag">📊 Business Management</div>
+            <h3>OwoTrack</h3>
+            <p>Smart business management for African entrepreneurs. Track income, expenses, and invoices. Generate AI-powered reports, manage customers, and run your business from your phone.</p>
+            <div class="product-features">
+              <span class="feature-pill">AI Reports</span>
+              <span class="feature-pill">Invoice System</span>
+              <span class="feature-pill">Voice Input</span>
+              <span class="feature-pill">Expense Tracker</span>
+              <span class="feature-pill">Customer CRM</span>
+              <span class="feature-pill">Subscriptions</span>
+            </div>
+            <div class="product-actions">
+              <a href="owotrack.html" class="btn btn-primary">Learn More</a>
+              <a href="owotrack.html#download" class="btn btn-outline">
+                <span>📲</span> Download
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HeartLink -->
+      <div class="product-card reveal delay-1">
+        <div class="product-visual" style="background:linear-gradient(135deg,#C2185B,#FF6B9D);">
+          <div class="app-icon-large app-icon-heartlink" style="margin:0 auto;">❤️</div>
+        </div>
+        <div class="product-info">
+          <div class="product-tag">💘 Social & Dating</div>
+          <h3>HeartLink</h3>
+          <p>Connect through personality and community. A safe, modern platform for meaningful relationships and social discovery.</p>
+          <div class="product-features">
+            <span class="feature-pill">Smart Matching</span>
+            <span class="feature-pill">Community Feed</span>
+            <span class="feature-pill">Safety System</span>
+          </div>
+          <div class="product-actions">
+            <a href="heartlink.html" class="btn btn-primary btn-sm">Learn More</a>
+            <a href="heartlink.html#download" class="btn btn-outline btn-sm">Download</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FixNG -->
+      <div class="product-card reveal delay-2">
+        <div class="product-visual" style="background:linear-gradient(135deg,#0066CC,#00C9FF);">
+          <div class="app-icon-large app-icon-fixng" style="margin:0 auto;">🔧</div>
+        </div>
+        <div class="product-info">
+          <div class="product-tag">🛠️ Services Marketplace</div>
+          <h3>FixNG</h3>
+          <p>Connecting customers with trusted artisans and service providers across Nigeria. Book, track, and pay — all in one app.</p>
+          <div class="product-features">
+            <span class="feature-pill">Artisan Directory</span>
+            <span class="feature-pill">Job Booking</span>
+            <span class="feature-pill">Verified Pros</span>
+          </div>
+          <div class="product-actions">
+            <a href="fixng.html" class="btn btn-primary btn-sm">Learn More</a>
+            <a href="fixng.html#download" class="btn btn-outline btn-sm">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ WHY TECHSPHERE ══════════ -->
+<section class="why-section section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag" style="background:rgba(245,196,0,.15);color:var(--gold);border:1px solid rgba(245,196,0,.3);">Why Choose Us</span>
+      <h2>Why TechSphere?</h2>
+      <p style="color:rgba(255,255,255,.6);">We don't just build apps — we build digital ecosystems designed for scale, trust, and impact.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal delay-1">
+        <div class="why-icon">🎨</div>
+        <h3>Premium UI/UX Design</h3>
+        <p>Every pixel is crafted with intention. Our interfaces are clean, intuitive, and beautiful — rivaling global tech standards.</p>
+      </div>
+      <div class="why-card reveal delay-2">
+        <div class="why-icon">🤖</div>
+        <h3>AI-Powered Features</h3>
+        <p>From voice input to intelligent reporting, our products integrate AI to make your business smarter, not just digital.</p>
+      </div>
+      <div class="why-card reveal delay-3">
+        <div class="why-icon">📐</div>
+        <h3>Scalable Architecture</h3>
+        <p>Built to grow with you. Our systems are designed for thousands — then millions — of users without performance compromise.</p>
+      </div>
+      <div class="why-card reveal delay-1">
+        <div class="why-icon">📱</div>
+        <h3>Mobile-First Approach</h3>
+        <p>Africa is mobile-first, so we are too. Every product is optimized for smartphones, low-bandwidth, and everyday use.</p>
+      </div>
+      <div class="why-card reveal delay-2">
+        <div class="why-icon">💼</div>
+        <h3>Business-Focused Solutions</h3>
+        <p>We understand African business realities — informal markets, local payment systems, and growth-stage challenges.</p>
+      </div>
+      <div class="why-card reveal delay-3">
+        <div class="why-icon">🌍</div>
+        <h3>Africa-First Thinking</h3>
+        <p>Built by Africans, for Africa. Our products reflect local context, language, and culture — not Western templates adapted awkwardly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ TESTIMONIALS ══════════ -->
+<section class="testimonials section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag">Early Feedback</span>
+      <h2>What People Are Saying</h2>
+      <p>Real feedback from our early users and partners as we grow.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal delay-1">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">"OwoTrack changed how I manage my tailoring business. I can track every expense, send invoices, and see my profit — all from my phone. Incredible!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">AM</div>
+          <div>
+            <div class="author-name">Amaka M.</div>
+            <div class="author-role">Fashion Entrepreneur, Lagos</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal delay-2">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">"FixNG helped me get three new clients in my first week. The app is clean, the booking system works perfectly. I'm booked every day now."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">KD</div>
+          <div>
+            <div class="author-name">Kola D.</div>
+            <div class="author-role">Electrician & Artisan, Abuja</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal delay-3">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">"HeartLink's community features feel different. It's not just swiping — there's real connection. The team clearly cares about building something meaningful."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">TC</div>
+          <div>
+            <div class="author-name">Temi C.</div>
+            <div class="author-role">Marketing Professional, Port Harcourt</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ NEWSLETTER ══════════ -->
+<section class="newsletter section-pad-sm">
+  <div class="container">
+    <div class="newsletter-inner reveal">
+      <span class="tag">Stay Updated</span>
+      <h2 style="color:var(--purple);margin:12px 0;">Get Product Updates</h2>
+      <p style="color:var(--text-muted);">Be the first to know when we launch new features, products, and special offers.</p>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input type="email" class="newsletter-input" placeholder="Enter your email address" required />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CTA ══════════ -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <span class="tag">Ready To Build?</span>
+      <h2>Let's Build Something Amazing Together</h2>
+      <p>Whether you're a startup with an idea or an established business ready to go digital — TechSphere is your technology partner.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-primary btn-lg">Start a Project</a>
+        <a href="products.html" class="btn btn-outline btn-lg">View Our Apps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-mark">TS</div>
+          TechSphere
+        </a>
+        <p>Building smart digital solutions for modern African businesses. From mobile apps to SaaS platforms — we're your technology partner.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="Facebook">f</a>
+          <a href="#" class="social-btn" aria-label="GitHub" style="font-size:1.1rem;">&#9670;</a>
+          <a href="#" class="social-btn" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-btn" aria-label="Instagram">&#9678;</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="owotrack.html">OwoTrack</a></li>
+          <li><a href="heartlink.html">HeartLink</a></li>
+          <li><a href="fixng.html">FixNG</a></li>
+          <li><a href="products.html">All Products</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>
+            <a href="mailto:nwankwolivinus95@gmail.com" class="footer-email">
+              ✉️ nwankwolivinus95@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/2349011495230" class="footer-email" target="_blank" rel="noopener">
+              💬 WhatsApp Support
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 TechSphere. All rights reserved. Built with ❤️ in Africa.</p>
+      <div class="footer-bottom-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="support.html">Support</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FixNG — Connecting Customers With Trusted Artisans</title>
+  <meta name="description" content="FixNG connects you with verified, rated artisans and service professionals across Nigeria. Book plumbers, electricians, mechanics, tailors and more." />
+  <meta name="keywords" content="FixNG, artisan app Nigeria, find plumber Nigeria, home services app, service marketplace Nigeria, book artisan" />
+  <meta property="og:title" content="FixNG — Your Trusted Artisan Marketplace" />
+  <meta property="og:description" content="Find, book, and pay trusted artisans across Nigeria. Plumbers, electricians, mechanics, and more — verified and rated." />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<!-- Page Loader -->
+<div class="page-loader" id="pageLoader">
+  <div class="loader-logo">
+    <div class="loader-mark" style="background:linear-gradient(135deg,#0066CC,#00C9FF);">🔧</div>
+    <div class="loader-text">FixNG</div>
+    <div class="loader-bar"><div class="loader-bar-fill" style="background:var(--gold);"></div></div>
+  </div>
+</div>
+
+<!-- ══════════ NAVBAR ══════════ -->
+<nav class="navbar scrolled" id="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="logo" style="color:var(--purple);">
+      <div class="logo-mark">TS</div>
+      TechSphere
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html" class="active">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#download" class="btn btn-sm" style="background:linear-gradient(135deg,#0066CC,#00C9FF);color:var(--white);">Download App</a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-cta" style="margin-top:28px;">
+    <a href="#download" class="btn btn-primary" style="width:100%;justify-content:center;">Download App</a>
+  </div>
+</div>
+
+<!-- ══════════ APP HERO ══════════ -->
+<section style="background:linear-gradient(135deg,#003d99 0%,#0066CC 50%,#00C9FF 100%);padding:120px 0 80px;position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Ccircle cx=\'30\' cy=\'30\' r=\'1\' fill=\'rgba(255,255,255,.07)\'/%3E%3C/svg%3E') repeat;"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <nav class="breadcrumb" style="margin-bottom:20px;">
+      <a href="index.html">Home</a><span>/</span>
+      <a href="products.html">Products</a><span>/</span>
+      <span class="current">FixNG</span>
+    </nav>
+    <div class="app-hero-grid">
+      <div class="app-hero-text">
+        <span class="tag" style="background:rgba(255,255,255,.15);color:var(--white);border:1px solid rgba(255,255,255,.25);">🛠️ Services Marketplace</span>
+        <h1 style="color:var(--white);margin:16px 0;">Connecting Customers With Trusted Artisans</h1>
+        <p style="color:rgba(255,255,255,.8);font-size:1.05rem;margin-bottom:32px;">FixNG makes it simple to find, book, and pay verified artisans and service professionals across Nigeria. From plumbers to electricians — quality service is just a tap away.</p>
+        <div class="download-group" id="download">
+          <a href="#" class="store-btn" style="background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);">
+            <span class="store-btn-icon">🤖</span>
+            <div class="store-btn-text">
+              <span class="store-label">Coming soon on</span>
+              <span class="store-name">Google Play</span>
+            </div>
+          </a>
+          <a href="#" class="store-btn" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);">
+            <span class="store-btn-icon">👷</span>
+            <div class="store-btn-text">
+              <span class="store-label">Are you an artisan?</span>
+              <span class="store-name">Join FixNG</span>
+            </div>
+          </a>
+        </div>
+        <div class="app-meta" style="border-top:1px solid rgba(255,255,255,.15);padding-top:28px;">
+          <div class="app-meta-item">
+            <div class="meta-number" style="color:#FFD740;">200+</div>
+            <div class="meta-label" style="color:rgba(255,255,255,.6);">Artisans Ready</div>
+          </div>
+          <div class="app-meta-item">
+            <div class="meta-number" style="color:#FFD740;">15+</div>
+            <div class="meta-label" style="color:rgba(255,255,255,.6);">Service Categories</div>
+          </div>
+          <div class="app-meta-item">
+            <div class="meta-number" style="color:#FFD740;">Free</div>
+            <div class="meta-label" style="color:rgba(255,255,255,.6);">To Use</div>
+          </div>
+        </div>
+      </div>
+      <div class="app-screens">
+        <div class="screen-item secondary" style="transform:rotate(-6deg);">
+          <img
+            src="images/apps/fixng/fixng-job-search.jpg"
+            alt="FixNG Job Search Screen"
+            style="width:100%;display:block;border-radius:28px;object-fit:cover;" />
+        </div>
+        <div class="screen-item main">
+          <img
+            src="images/apps/fixng/fixng-home.jpg"
+            alt="FixNG Home Screen"
+            style="width:100%;display:block;border-radius:28px;object-fit:cover;" />
+        </div>
+        <div class="screen-item secondary" style="transform:rotate(6deg);">
+          <img
+            src="images/apps/fixng/fixng-job-list.jpg"
+            alt="FixNG Job List Screen"
+            style="width:100%;display:block;border-radius:28px;object-fit:cover;" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SERVICE CATEGORIES ══════════ -->
+<section class="section-pad" style="background:var(--gray);">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag">Service Categories</span>
+      <h2>What Artisans Can You Find?</h2>
+      <p>FixNG covers a wide range of home, business, and personal services across Nigeria.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:16px;" class="reveal">
+      <div style="text-align:center;background:var(--white);border-radius:var(--radius-md);padding:24px 16px;border:1px solid rgba(43,20,100,.06);transition:var(--transition);" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="font-size:2rem;margin-bottom:8px;">⚡</div>
+        <div style="font-size:.85rem;font-weight:600;color:var(--dark);">Electricians</div>
+      </div>
+      <div style="text-align:center;background:var(--white);border-radius:var(--radius-md);padding:24px 16px;border:1px solid rgba(43,20,100,.06);transition:var(--transition);" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="font-size:2rem;margin-bottom:8px;">🚿</div>
+        <div style="font-size:.85rem;font-weight:600;color:var(--dark);">Plumbers</div>
+      </div>
+      <div style="text-align:center;background:var(--white);border-radius:var(--radius-md);padding:24px 16px;border:1px solid rgba(43,20,100,.06);transition:var(--transition);" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="font-size:2rem;margin-bottom:8px;">🔨</div>
+        <div style="font-size:.85rem;font-weight:600;color:var(--dark);">Carpenters</div>
+      </div>
+      <div style="text-align:center;background:var(--white);border-radius:var(--radius-md);padding:24px 16px;border:1px solid rgba(43,20,100,.06);transition:var(--transition);" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="font-size:2rem;margin-bottom:8px;">🚗</div>
+        <div style="font-size:.85rem;font-weight:600;color:var(--dark);">Mechanics</div>
+      </div>
+      <div style="text-align:center;background:var(--white);border-radius:var(--radius-md);padding:24px 16px;border:1px solid rgba(43,20,100,.06);transition:var(--transition);" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="font-size:2rem;margin-bottom:8px;">🧵</div>
+        <div style="font-size:.85rem;font-weight:600;color:var(--dark);">Tailors</div>
+      </div>
+      <div style="text-align:center;background:var(--white);border-radius:var(--radius-md);padding:24px 16px;border:1px solid rgba(43,20,100,.06);transition:var(--transition);" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="font-size:2rem;margin-bottom:8px;">🏗️</div>
+        <div style="font-size:.85rem;font-weight:600;color:var(--dark);">Builders</div>
+      </div>
+      <div style="text-align:center;background:var(--white);border-radius:var(--radius-md);padding:24px 16px;border:1px solid rgba(43,20,100,.06);transition:var(--transition);" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="font-size:2rem;margin-bottom:8px;">❄️</div>
+        <div style="font-size:.85rem;font-weight:600;color:var(--dark);">AC Technicians</div>
+      </div>
+      <div style="text-align:center;background:var(--white);border-radius:var(--radius-md);padding:24px 16px;border:1px solid rgba(43,20,100,.06);transition:var(--transition);" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="font-size:2rem;margin-bottom:8px;">🖥️</div>
+        <div style="font-size:.85rem;font-weight:600;color:var(--dark);">Tech Repair</div>
+      </div>
+      <div style="text-align:center;background:var(--white);border-radius:var(--radius-md);padding:24px 16px;border:1px solid rgba(43,20,100,.06);transition:var(--transition);" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="font-size:2rem;margin-bottom:8px;">🎨</div>
+        <div style="font-size:.85rem;font-weight:600;color:var(--dark);">Painters</div>
+      </div>
+      <div style="text-align:center;background:linear-gradient(135deg,rgba(0,102,204,.08),rgba(0,201,255,.12));border-radius:var(--radius-md);padding:24px 16px;border:1px solid rgba(0,102,204,.15);">
+        <div style="font-size:2rem;margin-bottom:8px;">➕</div>
+        <div style="font-size:.85rem;font-weight:600;color:#0066CC;">+ More</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ HOW IT WORKS ══════════ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag">Simple Booking</span>
+      <h2>How FixNG Works</h2>
+      <p>Book a professional artisan in under 5 minutes — from discovery to job completion.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
+      <div class="reveal-left">
+        <div style="display:flex;flex-direction:column;gap:28px;">
+          <div style="display:flex;gap:20px;align-items:flex-start;">
+            <div style="min-width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#0066CC,#00C9FF);display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:800;font-family:'Poppins',sans-serif;">1</div>
+            <div>
+              <h3 style="font-size:1rem;margin-bottom:6px;">Search For a Service</h3>
+              <p style="color:var(--text-muted);font-size:.9rem;">Open the app and search for the service you need — plumber, electrician, mechanic, and more — filtered by your location.</p>
+            </div>
+          </div>
+          <div style="display:flex;gap:20px;align-items:flex-start;">
+            <div style="min-width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#0066CC,#00C9FF);display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:800;font-family:'Poppins',sans-serif;">2</div>
+            <div>
+              <h3 style="font-size:1rem;margin-bottom:6px;">Compare & Choose</h3>
+              <p style="color:var(--text-muted);font-size:.9rem;">Browse verified artisan profiles, check ratings, reviews, pricing, and availability. Choose the best professional for your job.</p>
+            </div>
+          </div>
+          <div style="display:flex;gap:20px;align-items:flex-start;">
+            <div style="min-width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#0066CC,#00C9FF);display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:800;font-family:'Poppins',sans-serif;">3</div>
+            <div>
+              <h3 style="font-size:1rem;margin-bottom:6px;">Book & Confirm</h3>
+              <p style="color:var(--text-muted);font-size:.9rem;">Schedule the job at your preferred time. Get instant confirmation and real-time tracking as the artisan arrives.</p>
+            </div>
+          </div>
+          <div style="display:flex;gap:20px;align-items:flex-start;">
+            <div style="min-width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#e6a800);display:flex;align-items:center;justify-content:center;color:var(--dark);font-weight:800;font-family:'Poppins',sans-serif;">4</div>
+            <div>
+              <h3 style="font-size:1rem;margin-bottom:6px;">Pay & Rate</h3>
+              <p style="color:var(--text-muted);font-size:.9rem;">Pay securely in-app after job completion. Rate your experience and help others find quality artisans.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-right" style="background:linear-gradient(135deg,#0066CC,#00C9FF);border-radius:var(--radius-xl);padding:48px;text-align:center;">
+        <div style="font-size:4rem;margin-bottom:20px;">🔧</div>
+        <h3 style="color:var(--white);font-size:1.4rem;margin-bottom:12px;">For Artisans Too!</h3>
+        <p style="color:rgba(255,255,255,.75);margin-bottom:28px;line-height:1.7;">Are you a skilled artisan or service provider? Join FixNG and get connected with thousands of customers looking for your services right now.</p>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:28px;text-align:left;">
+          <div style="display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.85);font-size:.9rem;"><span>✓</span> Free to register</div>
+          <div style="display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.85);font-size:.9rem;"><span>✓</span> Get daily job requests</div>
+          <div style="display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.85);font-size:.9rem;"><span>✓</span> Build your reputation</div>
+          <div style="display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.85);font-size:.9rem;"><span>✓</span> Grow your income</div>
+        </div>
+        <a href="contact.html" class="btn btn-gold">Join As Artisan</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FEATURES ══════════ -->
+<section class="section-pad" style="background:var(--gray);" id="features">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag">App Features</span>
+      <h2>Everything You Need In One App</h2>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal delay-1">
+        <div class="feature-card-icon" style="background:linear-gradient(135deg,rgba(0,102,204,.08),rgba(0,201,255,.12));">✅</div>
+        <h3>Verified Artisans</h3>
+        <p>Every artisan on FixNG goes through identity verification, skills assessment, and community rating before being listed.</p>
+      </div>
+      <div class="feature-card reveal delay-2">
+        <div class="feature-card-icon" style="background:linear-gradient(135deg,rgba(0,102,204,.08),rgba(0,201,255,.12));">📍</div>
+        <h3>Location-Based Search</h3>
+        <p>Find artisans near you instantly. Filter by distance, availability, and price range for the best match.</p>
+      </div>
+      <div class="feature-card reveal delay-3">
+        <div class="feature-card-icon" style="background:linear-gradient(135deg,rgba(0,102,204,.08),rgba(0,201,255,.12));">💳</div>
+        <h3>Secure In-App Payments</h3>
+        <p>Pay safely through FixNG using card, bank transfer, or mobile money. Payment is only released when job is confirmed complete.</p>
+      </div>
+      <div class="feature-card reveal delay-1">
+        <div class="feature-card-icon" style="background:linear-gradient(135deg,rgba(0,102,204,.08),rgba(0,201,255,.12));">⭐</div>
+        <h3>Ratings & Reviews</h3>
+        <p>Real customer ratings on every artisan. Make informed decisions based on verified reviews from real jobs.</p>
+      </div>
+      <div class="feature-card reveal delay-2">
+        <div class="feature-card-icon" style="background:linear-gradient(135deg,rgba(0,102,204,.08),rgba(0,201,255,.12));">🔔</div>
+        <h3>Real-Time Notifications</h3>
+        <p>Get notified when an artisan accepts your request, is on the way, and when the job is completed.</p>
+      </div>
+      <div class="feature-card reveal delay-3">
+        <div class="feature-card-icon" style="background:linear-gradient(135deg,rgba(0,102,204,.08),rgba(0,201,255,.12));">🛡️</div>
+        <h3>Job Protection</h3>
+        <p>FixNG holds payment in escrow until you confirm the job is complete. Your money is always protected.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-pad" id="faq">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-question">How does FixNG verify artisans? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Every artisan on FixNG goes through a multi-step verification process including phone verification, ID verification, skills assessment, and an initial background check. Verified artisans receive a badge on their profile.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">What if the artisan doesn't complete the job properly? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Your payment is held in escrow and only released when you confirm the job is done properly. If there's an issue, you can raise a dispute and our team will mediate within 24 hours.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">What cities does FixNG cover? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>FixNG currently serves Lagos, Abuja, Port Harcourt, and Ibadan. We're expanding to more cities across Nigeria very soon. If your city isn't listed, sign up and we'll notify you when we launch in your area.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">How do I become an artisan on FixNG? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Download the FixNG Artisan app, create your profile with your skills and experience, complete the verification process, and start receiving job requests from customers near you. Registration is free.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" style="background:linear-gradient(135deg,#003d99,#0066CC);">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <span class="tag" style="background:rgba(255,255,255,.12);color:var(--white);">Get Started Now</span>
+      <h2 style="color:var(--white);">Find Your Trusted Artisan Today</h2>
+      <p style="color:rgba(255,255,255,.75);">FixNG is coming soon. Get on the waitlist and be the first to access Nigeria's most trusted artisan marketplace.</p>
+      <div class="cta-buttons">
+        <a href="#download" class="btn btn-gold btn-lg">Download FixNG</a>
+        <a href="contact.html" class="btn btn-outline-white btn-lg">Contact Support</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><div class="logo-mark">TS</div>TechSphere</a>
+        <p>FixNG is a product of TechSphere — connecting Nigerian communities with trusted service professionals.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn">f</a>
+          <a href="#" class="social-btn">&#9670;</a>
+          <a href="#" class="social-btn">in</a>
+          <a href="#" class="social-btn">&#9678;</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>FixNG</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#download">Download</a></li>
+          <li><a href="contact.html">Join As Artisan</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>TechSphere</h4>
+        <ul>
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="support.html">Help Center</a></li>
+          <li><a href="mailto:nwankwolivinus95@gmail.com" class="footer-email">✉️ nwankwolivinus95@gmail.com</a></li>
+          <li><a href="https://wa.me/2349011495230" class="footer-email" target="_blank" rel="noopener">💬 WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 TechSphere. FixNG is a registered trademark. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="support.html">Support</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

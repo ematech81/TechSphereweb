@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support Center — TechSphere</title>
+  <meta name="description" content="Get help with TechSphere products. FAQs, app guides, and direct support for OwoTrack, HeartLink, and FixNG." />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<div class="page-loader" id="pageLoader">
+  <div class="loader-logo">
+    <div class="loader-mark">TS</div>
+    <div class="loader-text">Support</div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+</div>
+
+<nav class="navbar scrolled" id="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="logo" style="color:var(--purple);">
+      <div class="logo-mark">TS</div>TechSphere
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="support.html" class="active">Support</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-gold btn-sm">Contact Us</a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-inner">
+      <nav class="breadcrumb" style="justify-content:center;margin-bottom:20px;">
+        <a href="index.html">Home</a><span>/</span><span class="current">Support</span>
+      </nav>
+      <span class="tag">Help Center</span>
+      <h1>How Can We Help You?</h1>
+      <p>Find answers to common questions, app guides, and contact our support team directly.</p>
+      <!-- Search Box -->
+      <div style="max-width:500px;margin:28px auto 0;display:flex;gap:12px;">
+        <input type="text" placeholder="Search for help..." style="flex:1;padding:14px 20px;border-radius:50px;border:none;font-family:'Inter',sans-serif;font-size:.9rem;outline:none;" />
+        <button class="btn btn-gold" style="border-radius:50px;">Search</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUPPORT CHANNELS -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag">Get Help Fast</span>
+      <h2>Support Channels</h2>
+      <p>Choose the support channel that works best for you.</p>
+    </div>
+    <div class="support-grid">
+      <div class="support-card reveal delay-1">
+        <div class="support-icon">💬</div>
+        <h3>WhatsApp Support</h3>
+        <p>Chat with our support team directly on WhatsApp. Fastest response — usually within 1 hour during business hours.</p>
+        <a href="https://wa.me/2349011495230" class="whatsapp-btn" target="_blank" rel="noopener">
+          <span>💬</span> Start WhatsApp Chat
+        </a>
+      </div>
+      <div class="support-card reveal delay-2">
+        <div class="support-icon">✉️</div>
+        <h3>Email Support</h3>
+        <p>Send us a detailed message and we'll reply within 24 hours. Best for complex issues or non-urgent questions.</p>
+        <a href="mailto:nwankwolivinus95@gmail.com" class="btn btn-primary" style="margin-top:auto;">
+          Send Email
+        </a>
+      </div>
+      <div class="support-card reveal delay-3">
+        <div class="support-icon">📖</div>
+        <h3>App FAQs</h3>
+        <p>Browse our comprehensive FAQ sections for each app. Most questions are answered here instantly.</p>
+        <a href="#faqs" class="btn btn-outline" style="margin-top:auto;">
+          Browse FAQs
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APP-SPECIFIC HELP -->
+<section class="section-pad" style="background:var(--gray);" id="faqs">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag">App Help Guides</span>
+      <h2>Help By Product</h2>
+    </div>
+
+    <!-- OwoTrack FAQs -->
+    <div style="margin-bottom:60px;">
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:32px;" class="reveal">
+        <div class="app-icon-large app-icon-owotrack" style="width:56px;height:56px;font-size:1.4rem;">₦</div>
+        <div>
+          <h3 style="color:var(--dark);">OwoTrack Help</h3>
+          <p style="color:var(--text-muted);font-size:.9rem;">Smart Business Manager for African Entrepreneurs</p>
+        </div>
+        <a href="owotrack.html" class="btn btn-outline btn-sm" style="margin-left:auto;">View App</a>
+      </div>
+      <div class="faq-list" style="max-width:100%;">
+        <div class="faq-item reveal">
+          <button class="faq-question">How do I record a transaction in OwoTrack? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Tap the "+" button on the home screen, select whether it's income or expense, enter the amount and category, then tap save. You can also use voice input by tapping the microphone icon.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">How do I create and send an invoice? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Go to Invoices → New Invoice. Add your customer's details, list the items/services, set the price, and tap "Send Invoice." Your customer receives a professional PDF invoice via WhatsApp or email.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">Why isn't my data syncing? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Check your internet connection first. OwoTrack works offline and syncs automatically when connected. If sync is still failing, go to Settings → Account → Force Sync, or contact our support team.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">How do I upgrade to a paid plan? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Go to Settings → Subscription → Upgrade Plan. Choose Business or Enterprise plan and pay via card, bank transfer, or USSD. Your upgrade activates instantly.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">I forgot my password. How do I reset it? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>On the login screen, tap "Forgot Password," enter your registered email or phone number, and follow the reset link sent to you. If you don't receive the reset link, check your spam folder or contact us.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HeartLink FAQs -->
+    <div style="margin-bottom:60px;">
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:32px;" class="reveal">
+        <div class="app-icon-large app-icon-heartlink" style="width:56px;height:56px;font-size:1.4rem;">❤️</div>
+        <div>
+          <h3 style="color:var(--dark);">HeartLink Help</h3>
+          <p style="color:var(--text-muted);font-size:.9rem;">Social & Dating Platform</p>
+        </div>
+        <a href="heartlink.html" class="btn btn-outline btn-sm" style="margin-left:auto;">View App</a>
+      </div>
+      <div class="faq-list" style="max-width:100%;">
+        <div class="faq-item reveal">
+          <button class="faq-question">How do I report an inappropriate user? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Tap the three dots (...) on any profile or message, then select "Report." Choose the reason and submit. Our moderation team reviews all reports within 1-2 hours and takes action immediately.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">How do I delete my HeartLink account? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Go to Settings → Privacy → Delete Account. Your account and all associated data will be permanently deleted within 30 days as per our privacy policy. This action cannot be undone.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FixNG FAQs -->
+    <div>
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:32px;" class="reveal">
+        <div class="app-icon-large app-icon-fixng" style="width:56px;height:56px;font-size:1.4rem;">🔧</div>
+        <div>
+          <h3 style="color:var(--dark);">FixNG Help</h3>
+          <p style="color:var(--text-muted);font-size:.9rem;">Artisan Services Marketplace</p>
+        </div>
+        <a href="fixng.html" class="btn btn-outline btn-sm" style="margin-left:auto;">View App</a>
+      </div>
+      <div class="faq-list" style="max-width:100%;">
+        <div class="faq-item reveal">
+          <button class="faq-question">How do I cancel a booking? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Go to My Bookings, select the booking you want to cancel, and tap "Cancel Booking." Free cancellation is available up to 2 hours before the scheduled time. Late cancellations may incur a small fee.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">What if an artisan doesn't show up? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>If an artisan is more than 30 minutes late without prior notice, tap "Artisan No-Show" in the app. We'll either find you another artisan immediately or issue a full refund within 24 hours.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STILL NEED HELP -->
+<section class="section-pad">
+  <div class="container">
+    <div style="text-align:center;max-width:600px;margin:0 auto;" class="reveal">
+      <span class="tag">Still Need Help?</span>
+      <h2 style="color:var(--purple);margin:16px 0;">Our Team Is Here For You</h2>
+      <p style="color:var(--text-muted);margin-bottom:32px;">Can't find what you're looking for? Our support team is available Monday to Saturday, 8AM to 8PM (WAT).</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="https://wa.me/2349011495230" class="whatsapp-btn btn-lg" target="_blank" rel="noopener">
+          <span>💬</span> WhatsApp Us
+        </a>
+        <a href="contact.html" class="btn btn-primary btn-lg">Send a Message</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><div class="logo-mark">TS</div>TechSphere</a>
+        <p>Building smart digital solutions for modern African businesses.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn">f</a>
+          <a href="#" class="social-btn">&#9670;</a>
+          <a href="#" class="social-btn">in</a>
+          <a href="#" class="social-btn">&#9678;</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="owotrack.html">OwoTrack</a></li>
+          <li><a href="heartlink.html">HeartLink</a></li>
+          <li><a href="fixng.html">FixNG</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:nwankwolivinus95@gmail.com" class="footer-email">✉️ nwankwolivinus95@gmail.com</a></li>
+          <li><a href="https://wa.me/2349011495230" class="footer-email" target="_blank" rel="noopener">💬 WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 TechSphere. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

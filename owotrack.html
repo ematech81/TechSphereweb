@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OwoTrack — Smart Business Management For African Businesses</title>
+  <meta name="description" content="OwoTrack is the all-in-one business finance app for African entrepreneurs. Track income, expenses, invoices, and generate AI-powered business reports." />
+  <meta name="keywords" content="OwoTrack, business management app Nigeria, invoice app, expense tracker Nigeria, small business app Africa, accounting app" />
+  <meta property="og:title" content="OwoTrack — Smart Business Manager" />
+  <meta property="og:description" content="Track your income, expenses, customers, and grow your business with AI-powered insights. Built for African entrepreneurs." />
+  <meta property="og:image" content="images/owotrack-og.png" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <style>
+    .owotrack-hero { background: linear-gradient(135deg, #2B1464 0%, #1a0a3e 50%, #F5C400 300%); }
+    .tabs-wrapper { margin-top: 48px; }
+    .tab-buttons { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 32px; }
+    .tab-btn {
+      padding: 10px 22px; border-radius: 50px; border: 2px solid rgba(43,20,100,.15);
+      background: transparent; color: var(--text-muted);
+      font-family: var(--font-main); font-weight: 600; font-size: .88rem;
+      cursor: pointer; transition: var(--transition);
+    }
+    .tab-btn.active, .tab-btn:hover { background: var(--purple); color: var(--white); border-color: var(--purple); }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+  </style>
+</head>
+<body>
+
+<!-- Page Loader -->
+<div class="page-loader" id="pageLoader">
+  <div class="loader-logo">
+    <div class="loader-mark">₦</div>
+    <div class="loader-text">OwoTrack</div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+</div>
+
+<!-- ══════════ NAVBAR ══════════ -->
+<nav class="navbar scrolled" id="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="logo" style="color:var(--purple);">
+      <div class="logo-mark">TS</div>
+      TechSphere
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html" class="active">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#download" class="btn btn-gold btn-sm">Download App</a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-cta" style="margin-top:28px;">
+    <a href="#download" class="btn btn-gold" style="width:100%;justify-content:center;">Download App</a>
+  </div>
+</div>
+
+<!-- ══════════ APP HERO ══════════ -->
+<section class="app-hero owotrack-hero" style="background:linear-gradient(135deg,var(--purple) 0%,#1a0a3e 100%);padding-top:120px;">
+  <div class="container">
+    <nav class="breadcrumb" style="margin-bottom:20px;">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <a href="products.html">Products</a>
+      <span>/</span>
+      <span class="current">OwoTrack</span>
+    </nav>
+    <div class="app-hero-grid">
+      <div class="app-hero-text" style="color:var(--white);">
+        <span class="tag" style="background:rgba(245,196,0,.15);color:var(--gold);border:1px solid rgba(245,196,0,.3);margin-bottom:16px;">📊 Business Management App</span>
+        <h1 style="color:var(--white);margin-bottom:16px;">Smart Business Management For African Businesses</h1>
+        <p class="hero-desc" style="color:rgba(255,255,255,.75);">
+          Track every naira, manage every customer, send professional invoices, and unlock AI-powered insights — all from your smartphone.
+        </p>
+        <div class="download-group" id="download">
+          <a href="#" class="store-btn">
+            <span class="store-btn-icon">🤖</span>
+            <div class="store-btn-text">
+              <span class="store-label">Get it on</span>
+              <span class="store-name">Google Play</span>
+            </div>
+          </a>
+          <a href="#" class="store-btn" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);">
+            <span class="store-btn-icon">🍎</span>
+            <div class="store-btn-text">
+              <span class="store-label">Coming soon on</span>
+              <span class="store-name">App Store</span>
+            </div>
+          </a>
+        </div>
+        <div class="app-meta">
+          <div class="app-meta-item">
+            <div class="meta-number" style="color:var(--gold);">500+</div>
+            <div class="meta-label" style="color:rgba(255,255,255,.55);">Downloads</div>
+          </div>
+          <div class="app-meta-item">
+            <div class="meta-number" style="color:var(--gold);">4.8★</div>
+            <div class="meta-label" style="color:rgba(255,255,255,.55);">Rating</div>
+          </div>
+          <div class="app-meta-item">
+            <div class="meta-number" style="color:var(--gold);">Free</div>
+            <div class="meta-label" style="color:rgba(255,255,255,.55);">To Get Started</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-screens">
+        <div class="screen-item secondary" style="transform:rotate(-6deg);">
+          <img
+            src="images/apps/owotrack/stock-report.jpg"
+            alt="OwoTrack Stock Report Screen"
+            style="width:100%;display:block;border-radius:28px;object-fit:cover;" />
+        </div>
+        <div class="screen-item main">
+          <img
+            src="images/apps/owotrack/home-dashboard.jpg"
+            alt="OwoTrack Transaction Ledger Screen"
+            style="width:100%;display:block;border-radius:28px;object-fit:cover;" />
+        </div>
+        <div class="screen-item secondary" style="transform:rotate(6deg);">
+          <img
+            src="images/apps/owotrack/transaction-ledger.jpg"
+            alt="OwoTrack Transaction Ledger Screen"
+            style="width:100%;display:block;border-radius:28px;object-fit:cover;" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FEATURES ══════════ -->
+<section class="section-pad" style="background:var(--gray);">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag">Everything You Need</span>
+      <h2>Powerful Features For Your Business</h2>
+      <p>OwoTrack packs everything a growing African business needs into one clean, easy-to-use app.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal delay-1">
+        <div class="feature-card-icon">💰</div>
+        <h3>Income & Expense Tracking</h3>
+        <p>Record every transaction in seconds. Categorize income and expenses automatically and see exactly where your money goes.</p>
+      </div>
+      <div class="feature-card reveal delay-2">
+        <div class="feature-card-icon">🧾</div>
+        <h3>Professional Invoice System</h3>
+        <p>Create and send beautiful invoices to clients in seconds. Track payment status and send automated reminders.</p>
+      </div>
+      <div class="feature-card reveal delay-3">
+        <div class="feature-card-icon">🤖</div>
+        <h3>AI-Powered Reports</h3>
+        <p>Get intelligent business insights generated by AI. Understand your best-selling products, peak hours, and profit margins.</p>
+      </div>
+      <div class="feature-card reveal delay-1">
+        <div class="feature-card-icon">🎤</div>
+        <h3>Voice Input</h3>
+        <p>Record transactions hands-free using your voice. Perfect for busy traders and shop owners who need to work fast.</p>
+      </div>
+      <div class="feature-card reveal delay-2">
+        <div class="feature-card-icon">👥</div>
+        <h3>Customer CRM</h3>
+        <p>Build a database of your customers, track their purchase history, and manage outstanding debts — all in one place.</p>
+      </div>
+      <div class="feature-card reveal delay-3">
+        <div class="feature-card-icon">📦</div>
+        <h3>Inventory Management</h3>
+        <p>Track your stock levels, get low-stock alerts, and never run out of your best-selling products again.</p>
+      </div>
+      <div class="feature-card reveal delay-1">
+        <div class="feature-card-icon">📊</div>
+        <h3>Business Analytics</h3>
+        <p>Visual charts and graphs that show your revenue trends, profit margins, and growth over time.</p>
+      </div>
+      <div class="feature-card reveal delay-2">
+        <div class="feature-card-icon">💳</div>
+        <h3>Subscription Management</h3>
+        <p>Manage customer subscriptions, recurring payments, and service plans with automated tracking.</p>
+      </div>
+      <div class="feature-card reveal delay-3">
+        <div class="feature-card-icon">📱</div>
+        <h3>Offline Support</h3>
+        <p>Keep working even without internet. OwoTrack syncs automatically when your connection is restored.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ HOW IT WORKS ══════════ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag">Simple Process</span>
+      <h2>How OwoTrack Works</h2>
+      <p>Get started in minutes and take full control of your business finances today.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;" class="reveal">
+      <div style="text-align:center;">
+        <div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--purple),var(--lavender));display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:800;font-size:1.2rem;font-family:'Poppins',sans-serif;margin:0 auto 16px;">1</div>
+        <h3 style="font-size:1rem;margin-bottom:8px;">Download & Sign Up</h3>
+        <p style="color:var(--text-muted);font-size:.88rem;">Download OwoTrack from Google Play and create your free business account in 2 minutes.</p>
+      </div>
+      <div style="text-align:center;">
+        <div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--purple),var(--lavender));display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:800;font-size:1.2rem;font-family:'Poppins',sans-serif;margin:0 auto 16px;">2</div>
+        <h3 style="font-size:1rem;margin-bottom:8px;">Set Up Your Business</h3>
+        <p style="color:var(--text-muted);font-size:.88rem;">Add your business name, logo, and currency. Add your products, services, and customer list.</p>
+      </div>
+      <div style="text-align:center;">
+        <div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--purple),var(--lavender));display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:800;font-size:1.2rem;font-family:'Poppins',sans-serif;margin:0 auto 16px;">3</div>
+        <h3 style="font-size:1rem;margin-bottom:8px;">Track Everything</h3>
+        <p style="color:var(--text-muted);font-size:.88rem;">Record sales, expenses, and invoices daily. Use voice input for speed or tap to enter manually.</p>
+      </div>
+      <div style="text-align:center;">
+        <div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#e6a800);display:flex;align-items:center;justify-content:center;color:var(--dark);font-weight:800;font-size:1.2rem;font-family:'Poppins',sans-serif;margin:0 auto 16px;">4</div>
+        <h3 style="font-size:1rem;margin-bottom:8px;">Grow With Insights</h3>
+        <p style="color:var(--text-muted);font-size:.88rem;">Access AI-powered reports, see your profit trends, and make smart business decisions every week.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PRICING ══════════ -->
+<section class="section-pad" style="background:var(--gray);" id="pricing">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag">Pricing Plans</span>
+      <h2>Choose Your Plan</h2>
+      <p>Start free and upgrade as your business grows. No hidden fees, cancel anytime.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card reveal delay-1">
+        <div class="plan-name">Starter</div>
+        <div class="plan-price">
+          <span class="plan-amount">Free</span>
+        </div>
+        <div class="plan-desc">Perfect for getting started and managing a small business.</div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span> Up to 50 transactions/month</li>
+          <li><span class="check">✓</span> Basic income & expense tracking</li>
+          <li><span class="check">✓</span> 5 invoices per month</li>
+          <li><span class="check">✓</span> 10 customers in CRM</li>
+          <li><span class="check">✓</span> Basic reports</li>
+          <li class="disabled"><span class="cross">✕</span> AI reports</li>
+          <li class="disabled"><span class="cross">✕</span> Voice input</li>
+          <li class="disabled"><span class="cross">✕</span> Unlimited transactions</li>
+        </ul>
+        <a href="#download" class="btn btn-outline" style="width:100%;justify-content:center;">Get Started Free</a>
+      </div>
+
+      <div class="pricing-card popular reveal delay-2">
+        <div class="plan-name">Business</div>
+        <div class="plan-price">
+          <span class="plan-amount">₦2,500</span>
+          <span class="plan-period">/month</span>
+        </div>
+        <div class="plan-desc">For growing businesses that need more power and insights.</div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span> Unlimited transactions</li>
+          <li><span class="check">✓</span> Full income & expense tracking</li>
+          <li><span class="check">✓</span> Unlimited invoices</li>
+          <li><span class="check">✓</span> Unlimited customers</li>
+          <li><span class="check">✓</span> AI-powered reports</li>
+          <li><span class="check">✓</span> Voice input</li>
+          <li><span class="check">✓</span> Inventory management</li>
+          <li><span class="check">✓</span> Priority support</li>
+        </ul>
+        <a href="#download" class="btn btn-primary" style="width:100%;justify-content:center;">Start Business Plan</a>
+      </div>
+
+      <div class="pricing-card reveal delay-3">
+        <div class="plan-name">Enterprise</div>
+        <div class="plan-price">
+          <span class="plan-amount">₦7,500</span>
+          <span class="plan-period">/month</span>
+        </div>
+        <div class="plan-desc">For larger businesses with multiple staff and locations.</div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span> Everything in Business</li>
+          <li><span class="check">✓</span> Multi-user access (up to 5)</li>
+          <li><span class="check">✓</span> Multiple store locations</li>
+          <li><span class="check">✓</span> Advanced analytics</li>
+          <li><span class="check">✓</span> Staff management</li>
+          <li><span class="check">✓</span> Custom reports</li>
+          <li><span class="check">✓</span> API access</li>
+          <li><span class="check">✓</span> Dedicated support</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">Contact Sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FAQ ══════════ -->
+<section class="section-pad" id="faq">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+      <p>Everything you need to know about OwoTrack.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-question">Is OwoTrack free to use? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Yes! OwoTrack has a free Starter plan that lets you track up to 50 transactions per month with 5 invoices. You can upgrade to Business or Enterprise plan as your business grows.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">Does OwoTrack work offline? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Yes! OwoTrack works offline and automatically syncs your data when your internet connection is restored. You can record transactions anywhere — market, field, or shop.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">What currencies does OwoTrack support? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>OwoTrack supports Nigerian Naira (₦) as the primary currency. We plan to add support for other African currencies including GHS, KES, ZAR, and USD in upcoming updates.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">How does the AI report feature work? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>OwoTrack analyzes your transaction history and automatically generates insights — identifying your top products, best customers, spending patterns, and growth trends. Reports are updated weekly and available in the Business plan and above.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">Can I export my data and reports? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Yes! You can export your business reports, invoices, and transaction history as PDF or Excel files. This makes it easy to share with accountants or apply for business loans.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">Is my business data secure? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Absolutely. OwoTrack uses end-to-end encryption and secure cloud storage to protect your business data. We never share your data with third parties. See our <a href="privacy-policy.html" style="color:var(--purple);">Privacy Policy</a> for details.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CTA ══════════ -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <span class="tag">Start Today</span>
+      <h2>Take Control Of Your Business Finances</h2>
+      <p>Join hundreds of African entrepreneurs using OwoTrack to grow smarter businesses. Download now — it's free!</p>
+      <div class="cta-buttons">
+        <a href="#download" class="btn btn-primary btn-lg">Download OwoTrack</a>
+        <a href="contact.html" class="btn btn-outline btn-lg">Contact Support</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><div class="logo-mark">TS</div>TechSphere</a>
+        <p>OwoTrack is a product of TechSphere — building smart digital solutions for modern African businesses.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn">f</a>
+          <a href="#" class="social-btn">&#9670;</a>
+          <a href="#" class="social-btn">in</a>
+          <a href="#" class="social-btn">&#9678;</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>OwoTrack</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#download">Download</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>TechSphere</h4>
+        <ul>
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="support.html">Help Center</a></li>
+          <li><a href="mailto:nwankwolivinus95@gmail.com" class="footer-email">✉️ nwankwolivinus95@gmail.com</a></li>
+          <li><a href="https://wa.me/2349011495230" class="footer-email" target="_blank" rel="noopener">💬 WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 TechSphere. OwoTrack is a registered trademark. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="support.html">Support</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
